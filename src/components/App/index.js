@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import dynamic from 'kyt-runtime/dynamic';
+import { Button } from '@nyt-cms/ink';
 import * as styles from './styled';
 
 export const Home = dynamic(() => import(/* webpackChunkName: "home" */ '../Home'));
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/tools" component={Tools} />
         </Switch>
+        <Button>Hello world!</Button>
       </div>
     </div>
   );
