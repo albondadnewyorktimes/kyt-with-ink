@@ -20,6 +20,7 @@ const modfiyWebpackConfigForNytCmsInk = (config, options) => {
 
   return config;
 };
+
 module.exports = {
   debug: false,
   modifyWebpackConfig: (config, options) => {
