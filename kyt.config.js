@@ -13,7 +13,11 @@ const modfiyWebpackConfigForNytCmsInk = (config, options) => {
     config.externals = [
       nodeExternals({
         modulesDir: options.modulesDir,
-        allowlist: ['webpack/hot/poll?300', '@nyt-cms/ink'],
+        allowlist: [
+          'webpack/hot/poll?300',
+          '@nyt-cms/ink',
+          '@nyt-cms/ink/lib/tokens/typography/fonts',
+        ],
       }),
     ];
   }
