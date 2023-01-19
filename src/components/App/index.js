@@ -3,6 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import dynamic from 'kyt-runtime/dynamic';
 import { Button } from '@nyt-cms/ink';
 import * as styles from './styled';
+import '@nyt-cms/ink/lib/tokens/typography/fonts';
 
 export const Home = dynamic(() => import(/* webpackChunkName: "home" */ '../Home'));
 export const Tools = dynamic(() => import(/* webpackChunkName: "tools" */ '../Tools'));
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/tools" component={Tools} />
         </Switch>
+        <br />
         <Button>Hello world!</Button>
       </div>
     </div>
